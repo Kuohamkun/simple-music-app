@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Simple Music App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Simple Music App is a basic music player built using React. It allows users to play and pause songs, track the progress of the current song, navigate within a song using a seek bar, and switch between different songs in the playlist.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- List all songs in the side panel
+- Play and pause the selected song
+- Display the artwork and information about the songs
+- Track the progress of the currently playing song
+- Navigate within a song with the seek bar
+- Go to the next or previous song
+- Toggle shuffle mode to play random songs
+- Play/pause the song with space key
+- Enable/disable auto next mode for automatic playback of the next song
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- Sass
+- Create React App
 
-### `npm test`
+## How to Run the App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine.
+2. Navigate to the project folder in the terminal.
+3. Run `npm install` to install the project dependencies.
+4. Run `npm start` to start the development server.
+5. Open your browser and go to `http://localhost:3000` to view the app.
 
-### `npm run build`
+## Adding Your Own Songs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can add your own songs by modifying the `songs.js` file located in the `src/data` folder. The songs should follow the following format:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```jsx
+{
+  name: "Song Name",
+  cover: "path/to/song-cover.jpg",
+  artist: "Artist Name",
+  audio: "path/to/song.mp3",
+  color: ["primary-color", "secondary-color"],
+  id: "unique-id",
+  active: true/false,
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+## Credits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The songs and artwork used in this app are from Chillhop Music (https://chillhop.com/). The app is intended for educational purposes only and not for commercial use.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project is licensed under the [MIT License](notion://www.notion.so/LICENSE).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contact
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions or suggestions, please feel free to contact me at [es.saady.hamza@gmail.com](mailto:es.saady.hamza@gmail.com).
