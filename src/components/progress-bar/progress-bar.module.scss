@@ -1,0 +1,18 @@
+@import "../../styles/colors";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  .rangeInput {
+    width: 25%;
+    margin: 0 10px;
+  }
+
+  .time {
+    font-size: 0.8rem;
+    color: $text-secondary-color;
+  }
+}

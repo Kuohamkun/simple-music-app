@@ -1,0 +1,22 @@
+.container {
+  .albumCover {
+    width: 20rem;
+    border-radius: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .description {
+    padding: 2rem;
+    text-align: center;
+
+    .songName {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .songArtist {
+      font-size: 0.8rem;
+    }
+  }
+}

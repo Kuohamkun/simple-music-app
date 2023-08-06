@@ -1,0 +1,21 @@
+$header-height: 4rem;
+
+.container {
+  height: 100%;
+  width: 15rem;
+  box-shadow: -3px 6px 30px rgba(34, 34, 34, 0.15);
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: $header-height;
+    padding: 0 1.5rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .songList {
+    height: calc(100% - $header-height);
+    overflow-y: auto;
+  }
+}

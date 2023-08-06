@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-hover-color;
+  }
+
+  &.active {
+    background-color: $bg-active-color;
+    &:hover {
+      background-color: $bg-active-color;
+    }
+  }
+
+  .albumCover {
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .description {
+    color: $text-secondary-color;
+
+    .songName {
+      font-size: 0.7rem;
+    }
+
+    .artistName {
+      font-size: 0.5rem;
+    }
+  }
+}
